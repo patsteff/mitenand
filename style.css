@@ -6,7 +6,7 @@ body {
     display: flex;
 }
 
-.hidden {
+.hidden-mobile {
     display: none;
 }
 
@@ -25,8 +25,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 4rem;
-    
+    height: 4rem;    
 }
 
 .nav-div1{
@@ -34,10 +33,16 @@ body {
     margin-right: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
     
 }
 
 .nav-flex1 {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.space-between {
     justify-content: space-between;
 }
 
@@ -65,6 +70,13 @@ body {
     line-height: 1.75rem; /* 28px */
 }
 
+.burger {
+    width: 50px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: white;
+}
+
 @media screen and (min-width: 1000px) {
     .nav-div1{
         margin-right: 2.5rem;
@@ -74,5 +86,13 @@ body {
     .text-nav {
         font-size: 1.25rem; /* 20px */
         line-height: 1.75rem; /* 28px */
+}
+
+.hidden-mobile {
+    display: flex;
+}
+
+.hidden-des {
+    display: none;
 }
 }
