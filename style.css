@@ -77,8 +77,8 @@ body {
     font-weight: 300;
 }
 
-main {
-    margin-top: 3rem;
+section {
+    margin-top: 4rem;
 }
 
 .container {
@@ -97,13 +97,22 @@ main {
     display: none;
 }
 
+.bg {
+    height: 100%;
+    width: 100%;
+    background-image: url('arth.jpg');
+    clip-path: polygon(0 15%, 100% 41%, 100% 100%, 1% 100%);
+    position: absolute;
+    z-index: -1;
+}
+
 @media screen and (min-width: 630px) {
     .nav-flex1 {
         margin-right: 2.5rem;
         margin-left: 2.5rem;
     }
 
-    main {
+    section {
         margin-right: 2.5rem;
         margin-left: 2.5rem;
     }
