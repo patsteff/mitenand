@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mitenand Arth-Goldau</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="nav-div1">
-          <div class="flex nav-flex1">
-            <div class="flex space-x-4 space-between">
-              <!-- logo -->
-              <div class="flex">
-                <a href="#" class="flex logo text-nav decoration-none">
-                  <span class="">Mitenand Logo</span>
-                </a>
-              </div>
 
-              <!-- primary nav -->
-              <div class="hidden-mobile flex pc-nav text-nav">
-                <a href="#activities" class="pc-nav-item decoration-none"
-                  >Aktivitäten</a
-                >
-                <a href="#donate" class="pc-nav-item decoration-none"
-                  >Spenden</a
-                >
-                <a href="#about" class="pc-nav-item decoration-none"
-                  >Über uns</a
-                >
-                <a href="#contact" class="pc-nav-item decoration-none"
-                  >Kontakt</a
-                >
-              </div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <title>Mitenand Arth-Goldau</title>
+</head>
 
-            <!-- mobile button goes here -->
-            <div class="hidden-des flex">
-              <button class="mobile-menu-button burger" id="burger">
-                <svg
-                  class="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                  stroke="black"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="0.5"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="flex nav-flex1">
+
+        <!-- logo -->
+        <div class="flex">
+          <a href="#" class="flex logo text-nav decoration-none">
+            <span class="">Mitenand Logo</span>
+          </a>
         </div>
 
-        <!-- mobile menu -->
-        <div
-          class="bg-buffetred text-white mobile-menu hidden lg:hidden"
-          id="menu"
-        >
-          <a href="#kaufen" class="block py-2 px-4 text-lg menuitem">Shop</a>
-          <a href="#media" class="block py-2 px-4 text-lg menuitem">Medien</a>
-
-          <a href="#support" class="block py-2 px-4 text-lg menuitem"
-            >Unterstützung</a
-          >
-          <a href="#about" class="block py-2 px-4 text-lg menuitem">Über uns</a>
-          <a href="#contact" class="block py-2 px-4 text-lg menuitem"
-            >Kontakt</a
-          >
+        <!-- primary nav -->
+        <div class="hidden-mobile flex pc-nav">
+          <a href="#events" class="pc-nav-item decoration-none">Treffen</a>
+          <a href="#support" class="pc-nav-item decoration-none">Unterstützen</a>
+          <a href="#about" class="pc-nav-item decoration-none">Über uns</a>
+          <a href="#contact" class="pc-nav-item decoration-none">Kontakt</a>
         </div>
-      </nav>
-    </header>
-    <h1>Test</h1>
-  </body>
+        <div class="hidden-des flex">
+          <button class="mobile-menu-button burger" id="burger">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="black">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="flex mobile-menu" id="mobile-menu">
+        <a href="#events" class="block py-2 px-4 text-lg menuitem decoration-none">Treffen</a>
+        <a href="#support" class="block py-2 px-4 text-lg menuitem decoration-none">Unterstützen</a>
+        <a href="#about" class="block py-2 px-4 text-lg menuitem decoration-none">Über uns</a>
+        <a href="#contact" class="block py-2 px-4 text-lg menuitem decoration-none">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section-info">
+      <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+      <h1>Test</h1>
+    </section>
+  </main>
+
+</body>
+
 </html>
