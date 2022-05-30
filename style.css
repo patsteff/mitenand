@@ -101,9 +101,13 @@ section {
     height: 100%;
     width: 100%;
     background-image: url('arth.jpg');
-    clip-path: polygon(0 15%, 100% 41%, 100% 100%, 1% 100%);
+    background-repeat: no-repeat;
+    clip-path: polygon(45% 0, 100% 41%, 100% 100%, 0 99%, 0 0);
+    background-size: cover;
     position: absolute;
     z-index: -1;
+    /* background-position: center; */
+
 }
 
 @media screen and (min-width: 630px) {
