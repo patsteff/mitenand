@@ -23,6 +23,10 @@ body {
     z-index: 50;
 }
 
+.nav-white {
+    background-color: white;
+}
+
 .nav {
     position: fixed;
     width: 100%;
@@ -84,15 +88,26 @@ section {
 .container {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 .newsbox {
-    border-radius: 0.75rem;
+    border-radius: 25px;
     background-color: white;
-    width: 40%;
-    height: 200px;
-    padding: 1rem;
+    border: 5px solid #75A887;
+    width: 750px;
+    height: 300px;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+
+.newsbox-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .mobile-menu {
@@ -102,14 +117,22 @@ section {
 }
 
 .bg {
-    height: 100vh;
+    height: calc(80vh - 2rem);
     width: 100%;
-    background-image: url('assets/img/hands.jpg');
-    background-repeat: no-repeat;
-    clip-path: polygon(45% 0, 100% 41%, 100% 100%, 0 99%, 0 0);
     position: absolute;
+    background-color: #E0BEA3;
     z-index: -1;
+    justify-content: center;
+    align-items: center;
+    top: 0;
     /* background-position: center; */
+}
+
+.img-hands {
+    border: 20px solid #BF6144;
+    border-radius: 50%;
+    width: 650px;
+    height: 650px;
 }
 
 .img-div {
@@ -129,7 +152,23 @@ section {
     align-items: center;
 }
 
-@media screen and (min-width: 630px) {
+.hand-empty {
+    width: 30%;
+}
+
+.hand-box {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden-des {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
     .nav-flex1 {
         margin-right: 2.5rem;
         margin-left: 2.5rem;
