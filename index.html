@@ -1,122 +1,160 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Mitenand Arth-Goldau</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <title>Mitenand Arth-Goldau</title>
-</head>
+  <body>
+    <header class="header">
+      <nav class="nav nav-white">
+        <div class="flex nav-flex1">
+          <!-- logo -->
+          <div class="flex">
+            <a href="#" class="flex logo text-nav decoration-none">
+              <span class="">Mitenand Logo</span>
+            </a>
+          </div>
 
-<body>
-  <header class="header">
-    <nav class="nav nav-white ">
-      <div class="flex nav-flex1">
-        <!-- logo -->
-        <div class="flex">
-          <a href="#" class="flex logo text-nav decoration-none">
-            <span class="">Mitenand Logo</span>
-          </a>
-        </div>
-
-        <!-- primary nav -->
-        <div class="hidden-mobile flex pc-nav">
-          <a href="#events" class="pc-nav-item decoration-none">Treffen</a>
-          <a href="#events" class="pc-nav-item decoration-none">Mitmachen</a>
-          <a href="#support" class="pc-nav-item decoration-none">Unterstützen</a>
-          <a href="#about" class="pc-nav-item decoration-none">Über uns</a>
-          <a href="#contact" class="pc-nav-item decoration-none">Kontakt</a>
-        </div>
-        <div class="hidden-des flex">
-          <button class="mobile-menu-button burger" id="burger">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="flex mobile-menu" id="mobile-menu">
-        <a href="#events" class="block py-2 px-4 text-lg menuitem decoration-none">Treffen</a>
-        <a href="#events" class="block py-2 px-4 text-lg menuitem decoration-none">Mitmachen</a>
-        <a href="#support" class="block py-2 px-4 text-lg menuitem decoration-none">Unterstützen</a>
-        <a href="#about" class="block py-2 px-4 text-lg menuitem decoration-none">Über uns</a>
-        <a href="#contact" class="block py-2 px-4 text-lg menuitem decoration-none">Kontakt</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="bg flex half-boxes">
-      <div class="hand-empty"></div>
-      <div class="flex hand-box">
-        <img class="img-hands" src="assets/img/hands.jpg" alt="hands">
-      </div>
-
-    </div>
-    <section class="section-info">
-      <div class="container">
-        <div class="newsbox">
-          <div class="newsbox-content flex">
-            <h1>Nächste Treffen</h1>
-            <p>Ior sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-              dolore magna aliquyam erat, sed diam voluptua.</p>
+          <!-- primary nav -->
+          <div class="hidden-mobile flex pc-nav">
+            <a href="#events" class="pc-nav-item decoration-none">Treffen</a>
+            <a href="#events" class="pc-nav-item decoration-none">Mitmachen</a>
+            <a href="#support" class="pc-nav-item decoration-none"
+              >Unterstützen</a
+            >
+            <a href="#about" class="pc-nav-item decoration-none">Über uns</a>
+            <a href="#contact" class="pc-nav-item decoration-none">Kontakt</a>
+          </div>
+          <div class="hidden-des flex">
+            <button class="mobile-menu-button burger" id="burger">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                stroke="black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="0.5"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="intro">
-      <div>
-        <h1>Mitenand Arth-Goldau</h1>
-        <div class="flex half-boxes">
-          <div class="half-box flex">
-            <p>
-              Ende 2015 wurde das Integrationsprojekt Mitenand in Arth lanciert. Diverse freiwillige Helferinnen und
-              Helfer engagieren sich seit dem Projektstart für die Integration von Flüchtlingen. Das Mitenand
-              Arth-Goldau
-              bietet Deutschkurse, Kochkurse, Schwimmkurse, Hausaufgabenhilfe und weitere Angebote für in der Umgebung
-              wohnhafte Flüchtlinge an. Das Programm findet regelmässig am Donnerstagabend und Samstagmorgen statt. Seit
-              dem
-              11. September 2017 ist das Mitenand Arth-Goldau ein Verein. Jede und jeder ist zum Mithelfen eingeladen.
-            </p>
-
-          </div>
-          <div class="half-box flex">
-            <div class="img-div"></div>
+        <!-- mobile menu -->
+        <div class="flex mobile-menu" id="mobile-menu">
+          <a
+            href="#events"
+            class="block py-2 px-4 text-lg menuitem decoration-none"
+            >Treffen</a
+          >
+          <a
+            href="#events"
+            class="block py-2 px-4 text-lg menuitem decoration-none"
+            >Mitmachen</a
+          >
+          <a
+            href="#support"
+            class="block py-2 px-4 text-lg menuitem decoration-none"
+            >Unterstützen</a
+          >
+          <a
+            href="#about"
+            class="block py-2 px-4 text-lg menuitem decoration-none"
+            >Über uns</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 px-4 text-lg menuitem decoration-none"
+            >Kontakt</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- <div class="bg flex half-boxes">
+        <div class="hand-empty"></div>
+        <div class="flex hand-box">
+          <img class="img-hands" src="assets/img/hands.jpg" alt="hands" />
+        </div>
+      </div> -->
+      <section class="section-info">
+        <div class="flex container">
+          <div class="newsbox">
+            <div class="newsbox-content flex">
+              <h1>Der Verein Mitenand Arth-Goldau</h1>
+              <p>
+                Schafft Begegnunsmöglichkeiten und bietet Unterstützung für
+                Flüchtlinge durch Freiwillige.
+              </p>
+              <button>Treffen</button>
+              <button>Mitmachen</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="events">
-      <h2>Treffen</h2>
-      <div>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet.
-      </div>
-      <div>
-        <h3>Wir bieten an</h3>
-        <ul>
-          <li>Unterstützung beim Deutsch lernen und praktizieren</li>
-          <li>Soziale Kontakte knüpfen und vernetzen</li>
-          <li>Fragen des alltäglichen Lebens klären</li>
-          <li>Integration</li>
-          <li>Spiel und Spass haben miteinander</li>
-          <li>Gemeinsame Aktivitäten</li>
-        </ul>
-
-      </div>
-    </section>
-
-  </main>
-
-</body>
-
+      </section>
+      <section id="intro">
+        <div>
+          <h1>Mitenand Arth-Goldau</h1>
+          <div class="flex half-boxes">
+            <div class="half-box flex">
+              <p>
+                Ende 2015 wurde das Integrationsprojekt Mitenand in Arth
+                lanciert. Diverse freiwillige Helferinnen und Helfer engagieren
+                sich seit dem Projektstart für die Integration von Flüchtlingen.
+                Das Mitenand Arth-Goldau bietet Deutschkurse, Kochkurse,
+                Schwimmkurse, Hausaufgabenhilfe und weitere Angebote für in der
+                Umgebung wohnhafte Flüchtlinge an. Das Programm findet
+                regelmässig am Donnerstagabend und Samstagmorgen statt. Seit dem
+                11. September 2017 ist das Mitenand Arth-Goldau ein Verein. Jede
+                und jeder ist zum Mithelfen eingeladen.
+              </p>
+            </div>
+            <div class="half-box flex">
+              <div class="img-div"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="events">
+        <h2>Treffen</h2>
+        <div>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+          <h3>Wir bieten an</h3>
+          <ul>
+            <li>Unterstützung beim Deutsch lernen und praktizieren</li>
+            <li>Soziale Kontakte knüpfen und vernetzen</li>
+            <li>Fragen des alltäglichen Lebens klären</li>
+            <li>Integration</li>
+            <li>Spiel und Spass haben miteinander</li>
+            <li>Gemeinsame Aktivitäten</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

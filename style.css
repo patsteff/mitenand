@@ -1,3 +1,7 @@
+:root {
+    --bg-color: rgb(241, 170, 146);
+  }
+
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -77,37 +81,45 @@ body {
     background-color: white;
 }
 
-.section-info {
-    font-weight: 300;
-}
-
 section {
     margin-top: 4rem;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    height: 70vh;
+.section-info {
+    background-color: var(--bg-color);
 }
 
-.newsbox {
-    border-radius: 25px;
-    background-color: white;
-    border: 5px solid #75A887;
-    width: 750px;
-    height: 300px;
-    margin-left: 10%;
-    margin-left: 10%;
+.container {
+    height: 70vh;
 }
 
 .newsbox-content {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.newsbox-content h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.newsbox-content button {
+    width: 130px;
+    height: 50px;
+    margin-top: 2%;
+    border-radius: 25px;
+    border: 2px black solid;
+    background-color: var(--bg-color);
+}
+
+.newsbox-content button:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
 }
 
 .mobile-menu {
