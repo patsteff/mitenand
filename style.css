@@ -106,7 +106,7 @@ section {
 }
 
 .container {
-    height: 70vh;
+    height: 80vh;
 }
 
 .newsbox-content {
@@ -128,7 +128,7 @@ section {
 .newsbox-content button {
     width: 130px;
     height: 50px;
-    margin-top: 2%;
+    margin-top: 10%;
     border-radius: 25px;
     border: 2px black solid;
     background-color: var(--bg-color);
