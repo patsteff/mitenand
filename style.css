@@ -1,5 +1,6 @@
 :root {
     --bg-color: rgb(241, 170, 146);
+    --text-padding: 5%;
 }
 
 body {
@@ -113,8 +114,8 @@ section {
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: var(--text-padding);
+    padding-right: var(--text-padding);
 }
 
 .newsbox-content h1 {
@@ -162,8 +163,8 @@ section {
 .img-hands {
     border: 20px solid #BF6144;
     border-radius: 50%;
-    width: 650px;
-    height: 650px;
+    width: 600px;
+    height: 400px;
 }
 
 .img-div {
@@ -172,15 +173,24 @@ section {
     border: 2px solid black;
 }
 
+.text-padding {
+    padding-bottom: var(--text-padding);
+    padding-left: var(--text-padding);
+    padding-right: var(--text-padding);
+}
+
 .half-boxes {
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .half-box {
-    width: 50%;
+    padding-top: var(--text-padding);
+    padding-bottom: var(--text-padding);
     justify-content: center;
-    align-items: center;
+}
+
+.half-box p {
+    margin: 0;
 }
 
 .hand-empty {
@@ -221,4 +231,17 @@ section {
     .mobile-menu {
         display: none;
     }
+
+    .half-boxes {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .half-box {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
