@@ -30,6 +30,11 @@ body {
 
 .nav-white {
     background-color: white;
+    margin-left: 1%;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .nav {
@@ -37,7 +42,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    height: 6rem;
+    height: 4rem;
 }
 
 .nav-div1 {
@@ -51,6 +56,7 @@ body {
 
 .nav-flex1 {
     justify-content: space-between;
+    width: 100%;
 }
 
 .space-between {
@@ -59,9 +65,8 @@ body {
 
 .logo {
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 10px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 .pc-nav {
@@ -73,7 +78,10 @@ body {
     padding-bottom: 1rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+}
 
+.mobile-bg{
+    background-color: white;
 }
 
 .burger {
@@ -108,6 +116,7 @@ section {
 
 .container {
     height: 80vh;
+    width: 100%;
 }
 
 .newsbox-content {
@@ -187,20 +196,15 @@ section {
     margin: 0;
 }
 
-.hand-empty {
-    width: 30%;
-}
-
-.hand-box {
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-}
-
 .hidden-des {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.list h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 @media screen and (min-width: 800px) {
@@ -236,6 +240,10 @@ section {
         width: 50%;
         justify-content: center;
         align-items: center;
+    }
+
+    .half-box img {
+        width: 400px;
     }
 
 }
