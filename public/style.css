@@ -1,6 +1,10 @@
 :root {
-    --bg-color: rgb(241, 170, 146);
+    --bg-color: #f1aa92;
+    --grey: #BDAAA3;
+    --light: #F2F1F5;
+    --brown: #91736A;
     --text-padding: 5%;
+    --text-padding-small: 2%;
 }
 
 * {
@@ -38,7 +42,7 @@ nav {
     right: 0;
     position: fixed;
     z-index: 50;
-    background-color: cornflowerblue;
+    background-color: white;
     padding: 16px 32px;
 }
 
@@ -153,12 +157,17 @@ nav {
     margin-bottom: 10px;
 }
 
-section {
-    margin-top: 2rem;
-}
-
 .section-info {
     background-color: var(--bg-color);
+    padding: 200px 0 100px 0;
+}
+
+section {
+    padding: 4rem 0 0 0;
+}
+
+h1 {
+    margin-bottom: 1rem;
 }
 
 .newsbox-content {
@@ -193,6 +202,14 @@ section {
     transition: 0.5s;
 }
 
+.newsbox-content p {
+    padding: 20px 0 20px 0;
+}
+
+li {
+    list-style-position: inside;
+}
+
 .bg {
     height: calc(80vh - 2rem);
     width: 100%;
@@ -215,6 +232,10 @@ section {
     padding-right: var(--text-padding);
 }
 
+.bottom {
+    padding-bottom: var(--text-padding-small);
+}
+
 .half-boxes {
     flex-direction: column;
 }
@@ -229,15 +250,18 @@ section {
     margin: 0;
 }
 
-.hidden-des {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .list h3 {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.section-events {
+    background-color: var(--grey);
+    padding-bottom: 4rem;
+}
+
+img {
+    border-radius: 15px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -248,6 +272,10 @@ section {
 
     .menu {
         display: flex;
+    }
+
+    .next-img {
+        padding-right: 50px;
     }
 
     .half-boxes {
