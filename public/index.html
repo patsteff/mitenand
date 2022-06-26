@@ -16,95 +16,49 @@
   </head>
 
   <body>
-    <header class="">
-      <nav class="nav-white">
-        <div class="margin-left">
-          <div class="flex nav-flex1">
-            <!-- logo -->
-            <a href="#" class="flex logo text-nav decoration-none">
-              <div class="flex logo">
-                <p class="">Mitenand Arth-Goldau</p>
-                <p class="small">Begegnung . Auf Augenhöhe</p>
-              </div>
-            </a>
+    <nav>
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="flex logo text-nav decoration-none">
+          <div class="flex logo">
+            <p class="">Mitenand Arth-Goldau</p>
+            <p class="small">Begegnung . Auf Augenhöhe</p>
+          </div>
+        </a>
 
-            <!-- primary nav -->
-            <div class="hidden-mobile flex pc-nav">
-              <a href="#events" class="pc-nav-item decoration-none">Treffen</a>
-              <a href="#events" class="pc-nav-item decoration-none"
-                >Mitmachen</a
-              >
-              <a href="#support" class="pc-nav-item decoration-none"
-                >Unterstützen</a
-              >
-              <a href="#about" class="pc-nav-item decoration-none">Über uns</a>
-              <a href="#contact" class="pc-nav-item decoration-none">Kontakt</a>
-            </div>
-            <div class="hidden-des flex">
-              <button class="mobile-menu-button burger" id="burger">
-                <svg
-                  class="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                  stroke="black"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="0.5"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <!-- mobile menu -->
-          <div class="flex mobile-menu mobile-bg" id="mobile-menu">
-            <a
-              href="#events"
-              class="block py-2 px-4 text-lg menuitem decoration-none menuitem"
-              >Treffen</a
-            >
-            <a
-              href="#events"
-              class="block py-2 px-4 text-lg menuitem decoration-none menuitem"
-              >Mitmachen</a
-            >
-            <a
-              href="#support"
-              class="block py-2 px-4 text-lg menuitem decoration-none menuitem"
-              >Unterstützen</a
-            >
-            <a
-              href="#about"
-              class="block py-2 px-4 text-lg menuitem decoration-none menuitem"
-              >Über uns</a
-            >
-            <a
-              href="#contact"
-              class="block py-2 px-4 text-lg menuitem decoration-none menuitem"
-              >Kontakt</a
-            >
-          </div>
+        <!-- primary nav -->
+        <div class="menu">
+          <a href="#events" class="decoration-none">Treffen</a>
+          <a href="#events" class="decoration-none">Mitmachen</a>
+          <a href="#support" class="decoration-none">Unterstützen</a>
+          <a href="#about" class="decoration-none">Über uns</a>
+          <a href="#contact" class="decoration-none">Kontakt</a>
         </div>
-      </nav>
-    </header>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#events" class="mobile-menu-item decoration-none">Treffen</a>
+        <a href="#events" class="mobile-menu-item decoration-none">Mitmachen</a>
+        <a href="#support" class="mobile-menu-item decoration-none"
+          >Unterstützen</a
+        >
+      </div>
+    </nav>
+
     <main>
-      <!-- <div class="bg flex half-boxes">
-        <div class="hand-empty"></div>
-        <div class="flex hand-box">
-          <img class="img-hands" src="assets/img/hands.jpg" alt="hands" />
-        </div>
-      </div> -->
       <section class="section-info">
-        <div class="flex container">
+        <div class="flex">
           <div class="newsbox">
             <div class="newsbox-content flex">
               <h1>Der Verein Mitenand Arth-Goldau</h1>
               <p>
                 Schafft Begegnunsmöglichkeiten und bietet Unterstützung für
-                Flüchtlinge durch Freiwillige.
+                Flüchtlinge durch freiwillige Helfer.
               </p>
               <a href="#events"><button>Treffen</button></a>
 
@@ -117,8 +71,8 @@
         <div class="text-padding">
           <h1>Mitenand Arth-Goldau</h1>
           <div class="flex half-boxes">
-            <div class="flex column">
-              <p>
+            <div class="flex column next-img">
+              <p class="bottom">
                 Ende 2015 wurde das Integrationsprojekt Mitenand in Arth
                 lanciert. Diverse freiwillige HelferInnen engagieren sich seit
                 dem Projektstart für die Integration von Flüchtlingen. Das
@@ -127,7 +81,7 @@
                 ein Verein. Jede und jeder ist zum Mitmachen eingeladen.
               </p>
               <div class="list">
-                <h3>Wir bieten an:</h3>
+                <h3 class="bottom">Unsere Aktivitäten:</h3>
                 <ul>
                   <li>Unterstützung beim Deutsch lernen und praktizieren</li>
                   <li>Soziale Kontakte knüpfen und vernetzen</li>
@@ -145,32 +99,26 @@
           </div>
         </div>
       </section>
-      <section id="events">
+      <section class="section-events" id="events">
         <div class="text-padding">
           <h2>Treffen</h2>
-          <div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          <div class="bottom">
+            Der Treffpunkt von Mitenand Arth-Goldau ist meistens im Pfrundhaus
+            Arth (Zugerstrasse 4, 6415 Arth). Räumlichkeiten für Goldau sind in
+            Abklärung. Wir treffen uns regelmässig am Dienstagabend dort zum
+            Hausaufgaben lösen, Deutsch lernen oder geniessen einfach ein
+            gemütliches Beisammensein. Unregelmässig treffen wir uns auch am
+            Samstagmorgen für weitere Aktivitäten.
           </div>
-        </div>
-      </section>
-      <section id="volunteer">
-        <div class="text-padding">
           <h2>Mitmachen</h2>
-          <div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+          <div class="bottom">
+            Jeder ist willkommen und auch neue Helfende sind jederzeit herzlich
+            willkommen und können sich melden.
           </div>
+          <h2>Anmelden/Kontakt</h2>
+          <p>Kontakt: Jonathan Prelicz</p>
+          <p>mitenand.arth@gmail.com</p>
+          <p>Natel: 0793654659</p>
         </div>
       </section>
     </main>
