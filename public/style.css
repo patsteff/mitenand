@@ -10,21 +10,17 @@
 }
 
 html {
-height: 100vh;
-width: 100vw;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .flex {
     display: flex;
-}
-
-.hidden-mobile {
-    display: none;
 }
 
 .decoration-none {
@@ -32,74 +28,98 @@ body {
     color: black;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    z-index: 50;
-}
-
-.nav-white {
-    background-color: white;
-}
-
 .column {
     flex-direction: column;
 }
 
 nav {
-    position: fixed;
-    width: 100vw;
     top: 0;
     left: 0;
-    height: 4rem;
+    right: 0;
+    position: fixed;
+    z-index: 50;
+    background-color: cornflowerblue;
+    padding: 16px 32px;
 }
 
-.margin-left {
-    margin-left: 10px;
-}
-
-.nav-div1 {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 100%;
-
-}
-
-.nav-flex1 {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.space-between {
-    justify-content: space-between;
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: black;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(5px);
+    background-color: var(--bg-color);
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.is-active span {
+    background-color: var(--bg-color);
+} 
+
+.menu {
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    /* offset margin from below */
+    margin: 0 -16px;
+}
+
+.menu a {
+    margin: 0 16px;
+    transform: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.menu a.is-active, .menu a:hover {
+    background-color: var(--bg-color);
 }
 
 .logo {
     align-items: center;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-
-.pc-nav {
-    align-items: center;
-}
-
-.pc-nav-item {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
 }
 
 .mobile-bg{
-    background-color: white;
-}
-
-.burger {
-    width: 50px;
-    height: 40px;
-    margin-right: 15px;
     background-color: white;
 }
 
@@ -115,22 +135,30 @@ nav {
 }
 
 .logo .small {
-    font-size: 1rem;
+    font-size: 0.79rem;
+}
+
+.mobile-menu {
+    display: none;
+} 
+
+.mobile-menu.is-active {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.mobile-menu.is-active a {
+    margin-bottom: 10px;
 }
 
 section {
     margin-top: 2rem;
-    width: 100vw;
 }
 
 .section-info {
     background-color: var(--bg-color);
-
-}
-
-.container {
-    height: 80vh;
-    width: 100%;
 }
 
 .newsbox-content {
@@ -165,22 +193,13 @@ section {
     transition: 0.5s;
 }
 
-.mobile-menu {
-    display: flex;
-    flex-direction: column;
-    display: none;
-}
-
 .bg {
     height: calc(80vh - 2rem);
     width: 100%;
-    position: absolute;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c486.79C121.392%2c499.354%2c238.195%2c590.461%2c353.172%2c549.546C471.651%2c507.385%2c550.133%2c389.432%2c599.098%2c273.599C647.322%2c159.52%2c646.66%2c32.016%2c623.363%2c-89.626C600.815%2c-207.359%2c561.923%2c-330.703%2c468.886%2c-406.292C380.151%2c-478.385%2c253.78%2c-460.71%2c141.314%2c-481.27C42.081%2c-499.411%2c-52.079%2c-527.634%2c-152.662%2c-519.92C-273.783%2c-510.631%2c-422.871%2c-527.034%2c-498.763%2c-432.181C-575.076%2c-336.802%2c-490.764%2c-193.954%2c-509.982%2c-73.324C-529.647%2c50.111%2c-654.738%2c162.047%2c-612.156%2c279.562C-569.98%2c395.956%2c-426.383%2c441.304%2c-309.12%2c481C-209.486%2c514.728%2c-104.629%2c475.961%2c0%2c486.79' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 1107.3899999999999C1545.11 1092.842 1644.46 1071.554 1742.188 1030.214 1858.189 981.144 2020.0059999999999 962.8299999999999 2062.252 844.173 2105.325 723.193 1964.479 613.814 1934.937 488.839 1909.123 379.634 1955.867 258.516 1900.711 160.79199999999997 1841.016 55.02600000000001 1742.047-39.03099999999995 1623.116-63.63499999999999 1506.04-87.856 1393.389-17.813999999999965 1285.405 33.49800000000005 1191.904 77.928 1120.1390000000001 147.853 1040.04 213.43200000000002 941.681 293.96 770.326 335.63300000000004 761.482 462.444 752.426 592.301 945.482 642.763 1001.9159999999999 760.066 1056.496 873.517 980.152 1043.816 1078.805 1122.031 1175.179 1198.4389999999999 1318.173 1124.252 1440 1107.3899999999999' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-color: #E0BEA3;
     z-index: -1;
     justify-content: center;
     align-items: center;
-    top: 0;
     /* background-position: center; */
 }
 
@@ -222,26 +241,13 @@ section {
 }
 
 @media screen and (min-width: 1000px) {
-    .nav-flex1 {
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
+
+    .hamburger {
+        display: none;
     }
 
-    .container {
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-    }
-
-    .hidden-mobile {
+    .menu {
         display: flex;
-    }
-
-    .hidden-des {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: none;
     }
 
     .half-boxes {
