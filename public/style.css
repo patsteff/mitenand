@@ -119,10 +119,6 @@ nav {
     background-color: var(--bg-color);
 }
 
-.logo {
-    align-items: center;
-}
-
 .mobile-bg{
     background-color: white;
 }
