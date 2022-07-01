@@ -8,7 +8,7 @@
 }
 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -104,7 +104,7 @@ h2 {
 
 .hamburger.is-active span {
     background-color: var(--bg-color);
-} 
+}
 
 .menu {
     display: none;
@@ -121,11 +121,12 @@ h2 {
     border-radius: 99px;
 }
 
-.menu a.is-active, .menu a:hover {
+.menu a.is-active,
+.menu a:hover {
     background-color: var(--light);
 }
 
-.mobile-bg{
+.mobile-bg {
     background-color: white;
 }
 
@@ -146,7 +147,7 @@ h2 {
 
 .mobile-menu {
     display: none;
-} 
+}
 
 .mobile-menu.is-active {
     display: flex;
@@ -184,7 +185,7 @@ section {
     margin-bottom: 0px;
 }
 
-.newsbox-content button {
+button {
     width: 130px;
     height: 50px;
     margin-top: 10%;
@@ -194,7 +195,7 @@ section {
     font-size: 1rem;
 }
 
-.newsbox-content button:hover {
+button:hover {
     color: white;
     background-color: black;
     transition: 0.5s;
