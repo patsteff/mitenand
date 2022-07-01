@@ -262,6 +262,19 @@ img {
     border-radius: 15px;
 }
 
+.icons-box {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.icons-box i {
+    font-size: 32px;
+}
+
+.icons-text {
+    padding-left: 15px;
+}
+
 @media screen and (min-width: 1000px) {
 
     .hamburger {
