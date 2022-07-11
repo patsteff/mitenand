@@ -275,6 +275,11 @@ img {
     padding-left: 15px;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 1000px) {
 
     .hamburger {
