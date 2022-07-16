@@ -173,6 +173,8 @@ h2 {
 
 .section-info {
     background-color: var(--bg-color);
+    background-image:
+    url("./assets/img/topography.svg");
     padding: 200px 0 100px 0;
 }
 
