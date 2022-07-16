@@ -52,6 +52,11 @@ h2 {
     font-weight: 200;
 }
 
+.align-left {
+    width: 100%;
+    text-align: left;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -292,6 +297,10 @@ img {
 
     .next-img {
         padding-right: 35px;
+    }
+
+    .next-img-left {
+        padding-left: 35px;
     }
 
     .half-boxes {
