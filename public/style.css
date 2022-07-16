@@ -57,6 +57,11 @@ h2 {
     text-align: left;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
