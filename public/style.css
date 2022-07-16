@@ -87,6 +87,7 @@ h2 {
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
+    margin-left: 12px;
     position: relative;
     background-color: black;
     border-radius: 6px;
@@ -195,7 +196,7 @@ section {
     margin-bottom: 0px;
 }
 
-button {
+.primary-button {
     width: 130px;
     height: 50px;
     margin-top: 10%;
@@ -205,7 +206,7 @@ button {
     font-size: 1rem;
 }
 
-button:hover {
+.primary-button:hover {
     color: white;
     background-color: black;
     transition: 0.5s;
