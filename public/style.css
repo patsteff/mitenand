@@ -272,7 +272,12 @@ li {
 
 .section-events {
     background-color: var(--light);
-    padding-bottom: 4rem;
+    
+}
+
+.section-weeks {
+    background-color: var(--bg-color);
+
 }
 
 img {
