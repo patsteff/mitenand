@@ -3,7 +3,6 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const nav = document.querySelector('nav');
 const hamburger = document.querySelector('.hamburger');
 const menuItem = document.querySelectorAll('.mobile-menu-item');
-console.log(menuItem)
 
 hamburger.addEventListener('click', function () {
     this.classList.toggle('is-active');
