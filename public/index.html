@@ -110,7 +110,10 @@
                   <li>Gemeinsame Aktivitäten</li>
                 </ul>
               </div>
-              <div id="app">{{ message }}</div>
+              <div id="app">
+                <p>{{ message }} - {{age}}</p>
+                <button @click="age++">increase age</button>
+              </div>
             </div>
 
             <div class="half-box flex">
