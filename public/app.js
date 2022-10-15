@@ -9,5 +9,8 @@ const { createApp } = Vue
         message: 'Hans Muster',
         age: 55
       }
-    }
+    },
+    methods: {
+      increaseAge() {this.age++} 
+    },
   }).mount('#app')
