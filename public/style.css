@@ -28,6 +28,25 @@ body {
     display: flex;
 }
 
+.my-img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .my-img {
+    width: 300px;
+  }
+}
+
+.first {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically (optional) */
+  height: 100%;            /* or set a fixed height if needed */
+}
+
 .decoration-none {
     text-decoration: none;
     color: black;
